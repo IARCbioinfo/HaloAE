@@ -1,0 +1,5 @@
+#!/bin/bash
+conda deactivate
+conda activate MIL_RNN_efficient
+python ~/HaloAE/inference.py --res_output_path  /home/mathiane/LNENWork/MvTech/hazelnut/ResultsHaloAE  --MVTEC_object hazelnut  --data_root_directory /home/mathiane/LNENWork/MvTech  --checkpoint_path /home/mathiane/LNENWork/MvTech/ModelsFeaturesMaps/hazelnut/HLTHL_ContrastiveReconstructionAdapt3Ways_hazelnut_smallVgg_fixed_2002.pt --reconsIM_Path /home/mathiane/LNENWork/MvTech/hazelnut/ResultsHaloAE/ReconsIM --reconsFM_Path /home/mathiane/LNENWork/MvTech/hazelnut/ResultsHaloAE/ReconsFM --score_output_pathIM /home/mathiane/LNENWork/MvTech/hazelnut/ResultsHaloAE/ScoresIM --score_output_pathFM /home/mathiane/LNENWork/MvTech/hazelnut/ResultsHaloAE/ScoresFM  --loss_dataframe_path /home/mathiane/LNENWork/MvTech/hazelnut/ResultsHaloAE/Loss.csv   --chekpoint_steps 50 100 250
+# python ~/HaloAE/scores.py --rootdir /home/mathiane/LNENWork/MvTech  --object hazelnut --exppath /home/mathiane/LNENWork/MvTech/hazelnut/ResultsHaloAE --step_checkpoint 50  100 250
